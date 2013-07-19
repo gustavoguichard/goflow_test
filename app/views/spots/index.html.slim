@@ -1,0 +1,4 @@
+h1 Hey
+ul
+  - @json_object['entities'].each do |spot|
+    li= spot[1]['name']

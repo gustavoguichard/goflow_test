@@ -1,21 +1,25 @@
 source 'https://rubygems.org'
 
-gem 'rails',     :git => 'git://github.com/rails/rails.git', :branch => '3-2-stable'
-gem 'journey',   :git => 'git://github.com/rails/journey.git', :branch => '1-0-stable'
-gem 'arel',      :git => 'git://github.com/rails/arel.git', :branch => '3-0-stable'
+gem 'rails', '~> 4.0'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   :git => 'git://github.com/rails/sass-rails.git', :branch => '3-2-stable'
-  gem 'coffee-rails', :git => 'git://github.com/rails/coffee-rails.git', :branch => '3-2-stable'
+# Assets
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'slim'
+gem 'slim-rails'
+gem 'uglifier'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+group :development do
+  gem 'awesome_print'
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rack-mini-profiler'
 end
 
 gem 'jquery-rails'

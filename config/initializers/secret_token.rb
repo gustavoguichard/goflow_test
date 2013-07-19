@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-GoflowTest::Application.config.secret_token = '0db086960736bcb4dad58b07448c00e590c7d0830c9c654a8a13304953daaf3930dad487889b619dbf883057de78f9c4da6aa1968948a8f26c91e3cb4b37b4bb'
+GoflowTest::Application.config.secret_token = '98f04878f72f7709c0849eff4b938e091d3319ceb804e49820022cafbc3d19aacdb6e7cab23e7c5077fc5939b1bfa8e2bcda7f7bd74d86abbdc62787d01cd91b'
