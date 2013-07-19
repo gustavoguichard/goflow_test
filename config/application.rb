@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
-require "rails/test_unit/railtie"
+# require "rails/test_unit/railtie"
 
 Bundler.require(:default, Rails.env)
 
@@ -47,5 +47,10 @@ module GoflowTest
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+        g.view_specs false
+        g.helper_specs false
+    end
   end
 end

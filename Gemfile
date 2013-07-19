@@ -31,11 +31,13 @@ end
 group :development, :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
+  gem 'mongoid-rspec'
 end
 
 # To use Jbuilder templates for JSON
 gem 'jbuilder'
 
+gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
