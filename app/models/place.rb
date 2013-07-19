@@ -1,5 +1,12 @@
 class Place
   include Mongoid::Document
-  field :name, type: String
-  field :imageUpdated, type: Date
+  field :name
+  field :image
+  field :type
+  field :checkins, type: Array
+  field :webUri
+  field :conditions
+  field :conditionsUpdated
+  field :imageUpdated
+  field :coordinates
 end

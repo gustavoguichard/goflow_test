@@ -8,6 +8,8 @@ gem 'rails', '~> 4.0'
 
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 
+gem 'rails-api'
+
 # Assets
 gem 'sass-rails'
 gem 'coffee-rails'
