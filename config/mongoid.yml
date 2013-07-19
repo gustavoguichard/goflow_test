@@ -76,4 +76,9 @@ test:
         retry_interval: 0
 
 production:
-  uri: <%= ENV['DATABASE_URL'] %>
+  sessions:
+    default:
+      uri: <%= ENV['DATABASE_URL'] %>
+      options:
+        skip_version_check: true
+        safe: true
